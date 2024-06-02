@@ -1,0 +1,262 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+html{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.layar-dalam{
+    width: 1000px;
+    margin: auto;
+}
+.layar-penuh{
+    width: 100%;
+}
+nav {
+    /* color: rgba(177, 103, 103, 0.986); */
+    z-index: 100;
+    color: white;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav .logo{
+    float: left;
+    position: relative;
+    /* line-height: 55px; */
+    text-align: center;
+
+}
+nav .logo img{
+        vertical-align: middle;
+    width: 100px;
+}
+nav .menu{
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+nav .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li{
+    list-style-type: none;
+    float: left;
+    line-height: 90px;
+}
+nav ul li a{
+    color: rgb(20, 5, 90);
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    /* opacity: 25%; */
+
+}
+
+/* pengaturan header */
+header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;  
+    opacity: 65%; 
+}
+header .intro{
+    z-index: 100;
+    color: rgb(4, 4, 104);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    /* margin-top: 35PX; */
+    padding-top: 40PX;
+    line-height: 65PX;
+}
+header .intro h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    line-height: 35PX;
+}
+.tombol{
+    background-color: rgb(67, 147, 252);
+    height: 40px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.tombol-menu{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tobol-menu .garis{
+    height: 3px;
+    background-color: white;
+
+}
+section{
+    padding: 50px 0px 50px 0px;
+}
+section h3{
+    font-size: 30px;
+}
+section h3::after{
+    content: "";
+    border-bottom: 5p solid rgb(67, 147, 252);
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+#aboutus{
+    text-align: center;
+}
+section p.ringkasan {
+    font-style: italic;
+    font-size: 18px;
+    color: gray;
+}
+section .konten-isi p{
+    font-style: normal;
+}
+nav.putih{
+    background-color: white;
+}
+nav .putih .tobol-menu .garis{
+    background-color: #333;
+}
+nav.putih ul li a{
+    color: black;
+}
+nav .img.hitam{
+    display: none;
+
+}
+section#team{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 75px 65px 75px 65px;
+    background-color: rgb(144, 186, 241);
+    bottom: 50px;
+}
+section#team div{
+    padding: 5px;
+    /* background-color: rgb(197, 193, 193); */
+}
+section#team div img{
+    height: 145px;
+    /* width: 100px; */
+    border-radius: 5px;
+    size: 50px;
+    justify-content: center;
+    justify-items: center;
+
+}
+section#team div img:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+#blog{
+    text-align: center;
+}
+.blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.blog .area{
+    width: 47%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blog div.are div{
+    width: 50%;
+}
+.blog .area .gambar{
+    border-radius: 5px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.blog .area .text article{
+    padding: 40px;
+}
+.blog .area .text article h4{
+    margin: 0px;
+}
+.blog .area .text article a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.blog .area .text article a:hover{
+    color: #ccc;
+}
+footer{
+    padding: 50px 0px 50px 0px;
+    background-color: rgb(144, 186, 241);
+    color: white;
+}
+footer .layar-dalam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .layar-dalam div {
+    width: 10%;
+}
+footer .layar-dalam h5{
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media  screen and (max-width: 991.98px) {
+    .layar-dalam{
+        width: 90%;
+    }
+    nav .menu ul{
+        display: none;
+    }
+    .tombol-menu{
+        display: flex;
+    }
+}
